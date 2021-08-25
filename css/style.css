@@ -16,36 +16,142 @@ SUGESTÃO DE ESTRUTURAÇÃO BASE
 
 /* VARIÁVEIS */
 :root{
-  
+
+
 }
 
 /*BODY*/
 body{
+	display: flex;
+	flex-direction: column;
+	max-width: 935px;
+	justify-content: center;
+	margin: 10%;
+	font-family: Arial, Helvetica, sans-serif;
 
 }
 
-/*TOPO*/
 header{
+	display: flex;
+	height: 54px;
+	justify-content: center;
+}
+header img{
+	width: 103px;
+	height: 36px;
+	
+
+}
+
+.profile-content{
+	display: flex;
+	
+}
+.profile-content img{
+	border-radius: 50%;
+	
+}
+.profile-content .profile-info ul{
+	margin: 0px;
+	padding: 0px;
 	
 }
 
+
+
+.profile-content .profile-info .profile-data{
+	display: flex;
+	justify-content: flex-start;
+}
+
+
+
+.profile-content .profile-info h1{
+	font-size: 28px;
+}
+
+.profile-content .profile-info h2{
+	font-size: 16px;
+}
+.profile-content .profile-data ul,li{
+	list-style: none;
+}
+
+.profile-content .profile-data p:nth-child(1){
+	font-weight: bold;
+	margin-left: 0px; 
+}
+.profile-content .profile-data p:nth-child(2){
+	font-weight: bold;
+	margin-left: 10px;
+}
+.profile-content .profile-data p:nth-child(3){
+	font-weight: bold;
+	margin-left: 10px;
+}
 /*RODAPÉ*/
 footer{
-
+	display: flex;
+	flex-direction: column;
 }
+footer .footer-nav{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+footer .footer-nav a{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 10px;
+	flex-wrap: wrap;
+}
+footer .copyright p{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
 
 /*PÁGINA INICIAL*/
 main{
+	justify-content: center;
+}
+main .profile-content{
+	display: flex;
+}
+
+main .highlighted-stories{
+	display: flex;
+	justify-content: left;
 	
 }
-	main .profile-content{
+main .highlighted-stories ul{
+	display: flex;
+}
+main .highlighted-stories img{
+	width: 77px;
+	border-radius: 50%;
+}
 
-	}
+main .profile-posts{
 
-	main .highlighted-stories{
+	
 
-	}
+}
+main .profile-posts nav{
+	display: flex;
+	justify-content: center;
+	
 
-	main .profile-posts{
+}
+main .profile-posts ul{
+	display: flex;
+	flex-wrap: wrap;
+}
 
-	}
+main .profile-posts img{
+	width: 239px;
+	height: 239px;
+}
+
